@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #5f5d5d;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.theme{
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 4px 4px;
+    border-radius: 14px;
+}
+
+.cont2 {
+    display: flex;
+}
+
+.rightcont ul li {
+    margin-top: 6px;
+}
+
+.rightcont {
+    margin-right: 30px;
+    /*isko hatana hai*/
+}
+
+.leftcont ul,
+.rightcont ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.leftcont ul li,
+.rightcont ul li {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.leftcont ul li a,
+.rightcont ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.rightcont ul {
+    margin-left: auto;
+}
+
+.day-theme {
+    background-color: white;
+    color: black;
+}
+
+.night-theme {
+    background-color: #333;
+    color: white;
+}
+
+/*From here HammburgerMenu start:*/
+.burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    display: none;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    background-color: white;
+    height: 3px;
+    margin: 5px 3px;
+}
+
+@media screen and (max-width: 805px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.7s ease-out;
+        height: 190px;
+    }
+
+    .cont2 {
+        margin-left: 63px;
+    }
+
+    .continer2 p {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    
+    .leftcont ul {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 2px;
+    }
+
+    .rightcont ul {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 2px;
+    }
+
+    .rightcont {
+        margin-left: -37px;
+    }
+
+    .leftcont ul li,
+    .rightcont ul li {
+        margin-right: 0px;
+        margin-top: 7px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .h-nav {
+        height: 45px;
+        /*isse navbar ki height 130 px ho jayegi */
+    }
+
+    .v-class {
+        opacity: 0;
+        /*isse navbar ke item nhi dikhengai */
+    }
+}
